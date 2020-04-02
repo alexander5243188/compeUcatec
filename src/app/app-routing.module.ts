@@ -18,11 +18,8 @@ const routes: Routes = [
   {
     path: 'compra',
     loadChildren: () => import('./pages/compra/compra.module').then( m => m.CompraPageModule)
-  },
-  {
-    path: 'sidemenu',
-    loadChildren: () => import('./sidemenu/sidemenu.module').then( m => m.SidemenuPageModule)
-  },
+  }
+ 
 ];
 
 @NgModule({

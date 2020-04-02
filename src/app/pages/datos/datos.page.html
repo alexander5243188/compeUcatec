@@ -1,37 +1,43 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>datos</ion-title>
+    <ion-title>Registro de datos personales</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
     <ion-item>
+      <ion-icon name="person-outline"></ion-icon>
       <ion-label>Nombres :</ion-label>
       <ion-input type= "text" placeholder="Nombres"></ion-input>
     </ion-item>
 
     <ion-item>
+      <ion-icon name="person-outline"></ion-icon>
       <ion-label>Apellidos :</ion-label>
       <ion-input type= "text" placeholder="Apellidos"></ion-input>
     </ion-item>
 
     <ion-item>
+      <ion-icon name="mail-open-outline"></ion-icon>
       <ion-label>Correo electronico :</ion-label>
       <ion-input type= "email" placeholder="email"></ion-input>
     </ion-item>
 
     <ion-item>
+      <ion-icon name="calendar-outline"></ion-icon>
       <ion-label>Fecha de nacimiento :</ion-label>      
         <ion-datetime displayFormat="DDDD MMM D, YYYY" min="1950" max="2016" value="1979-05-02"></ion-datetime>      
     </ion-item>
 
     <ion-item>
+      <ion-icon name="key-outline"></ion-icon>
       <ion-label>Contraceña :</ion-label>
       <ion-input type= "password" placeholder="contraseña"></ion-input>
     </ion-item>
 
     <ion-item>
+      <ion-icon name="key-outline"></ion-icon>
       <ion-label>Confirmar contraceña :</ion-label>
       <ion-input type= "passwordConfirmation" placeholder="Confirmar contraseña"></ion-input>
     </ion-item> 
@@ -39,16 +45,24 @@
     
       <ion-col>
         <ion-item>
+          <ion-icon name="woman-outline"></ion-icon> 
           <ion-label>Mujer</ion-label>
         </ion-item>
       </ion-col>
       <ion-col>
-        <ion-item>          
+        <ion-item>             
+          <ion-icon name="man-outline"></ion-icon>     
           <ion-label>Hombre</ion-label>          
         </ion-item>
       </ion-col>
   </ion-list>
   <div padding>
-    <ion-button routerLink="/datos" color="danger">Registrar</ion-button>
+    <ion-button  routerLink="/productos" color="danger">
+      <div>
+        <ion-icon name="save-outline"></ion-icon>
+        <label>Registrar</label>
+      </div>
+    </ion-button>
   </div>
+
 </ion-content>
