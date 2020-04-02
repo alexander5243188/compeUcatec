@@ -2,8 +2,27 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
+  { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
+  },
+  {
+    path: 'datos',
+    loadChildren: () => import('./pages/datos/datos.module').then( m => m.DatosPageModule)
+  },
+  {
+    path: 'productos',
+    loadChildren: () => import('./pages/productos/productos.module').then( m => m.ProductosPageModule)
+  },
+  {
+    path: 'compra',
+    loadChildren: () => import('./pages/compra/compra.module').then( m => m.CompraPageModule)
+  },
+  {
+    path: 'sidemenu',
+    loadChildren: () => import('./sidemenu/sidemenu.module').then( m => m.SidemenuPageModule)
+  },
 ];
 
 @NgModule({
