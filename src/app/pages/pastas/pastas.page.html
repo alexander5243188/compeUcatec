@@ -1,0 +1,35 @@
+<app-header titulo="Pastas"></app-header>
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>pastas</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<ion-content>
+  <div id="listaProductos">
+    <ion-card *ngFor="let dato of producto"> <!-- [routerLink]="dato.url" >-->     
+      
+      <ion-grid>
+        <ion-row>
+          <ion-img src="{{dato.imagen}}" (click)="cabelloAngel()"></ion-img>
+          <ion-col size="1">       </ion-col>
+
+          <ion-col>
+            <ion-item>{{dato.nombre}}</ion-item>
+            <ion-item>              Presentacion: {{dato.presentacion}}            </ion-item>
+            <ion-item>              Categoria: {{dato.categoria}}            </ion-item>
+            <ion-button size="small">
+              <ion-icon slot="start" name="cart"></ion-icon>
+              Compra
+            </ion-button>
+            
+          </ion-col>
+          
+          <ion-col size="1">       </ion-col>
+        </ion-row>
+        
+      </ion-grid>
+      
+    </ion-card>
+  </div>
+
+</ion-content>

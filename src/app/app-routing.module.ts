@@ -18,7 +18,32 @@ const routes: Routes = [
   {
     path: 'compra',
     loadChildren: () => import('./pages/compra/compra.module').then( m => m.CompraPageModule)
+  },  {
+    path: 'pastas',
+    loadChildren: () => import('./pages/pastas/pastas.module').then( m => m.PastasPageModule)
+  },
+  {
+    path: 'bebidas',
+    loadChildren: () => import('./pages/bebidas/bebidas.module').then( m => m.BebidasPageModule)
+  },
+  {
+    path: 'frutas',
+    loadChildren: () => import('./pages/frutas/frutas.module').then( m => m.FrutasPageModule)
+  },
+  {
+    path: 'verduras',
+    loadChildren: () => import('./pages/verduras/verduras.module').then( m => m.VerdurasPageModule)
+  },
+  {
+    path: 'categorias',
+    loadChildren: () => import('./pages/categorias/categorias.module').then( m => m.CategoriasPageModule)
+  },
+  {
+    path: 'lista-api',
+    loadChildren: () => import('./pages/lista-api/lista-api.module').then( m => m.ListaAPIPageModule)
   }
+
+
  
 ];
 

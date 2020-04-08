@@ -1,13 +1,75 @@
+ <!-- <app-header titulo="productos"></app-header>-->
+
 <ion-header>
   <ion-toolbar>
       <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+       <ion-menu-button></ion-menu-button>
+       <ion-back-button defaultHref="/inicio"></ion-back-button>
       </ion-buttons>
-    <ion-title>
-      Home
-    </ion-title>
+    <ion-title>Categoria</ion-title>
   </ion-toolbar>
 </ion-header>
 
 
-<ion-content> </ion-content>
+<ion-content>
+  <div id="listaProductos">
+    <!--
+    <ion-item *ngFor = "let c of componentes" [routerLink]="c.redirectTo" detail>
+      <ion-icon slot="start" [name]="c.icon"></ion-icon>
+      <ion-label>{{c.name}}</ion-label>      
+    </ion-item>
+    -->
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">        
+        <ion-card routerLink="/pastas"color="primary" >
+          <ion-avatar>
+          <img src="assets/img/pastas.jpg">
+        </ion-avatar>    
+        <ion-list>          
+          <ion-card-content>Veriedad de Pastas</ion-card-content>
+        </ion-list>
+
+        </ion-card>
+        
+      </ion-col>
+
+      <ion-col size="6">                       
+        <ion-card routerLink="/bebidas" color="primary">
+          <ion-avatar>
+          <img src="assets/img/refrescos.jpg">          
+        </ion-avatar>
+        <ion-list>          
+          <ion-card-content>Tunta</ion-card-content>
+        </ion-list> 
+        </ion-card>        
+      </ion-col>   
+
+      <ion-col size="6">
+        <ion-card routerLink="/frutas" color="primary">
+          <ion-avatar>
+          <img src="assets/img/frutas.jpg">       
+        </ion-avatar>
+        <ion-list>          
+          <ion-card-content>Amaranto</ion-card-content>
+        </ion-list> 
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card routerLink="/verduras" color="primary">
+          <ion-avatar>
+          <img src="assets/img/verduras.jpg">
+        </ion-avatar>
+          <ion-list>          
+            <ion-card-content>quinua</ion-card-content>
+          </ion-list>          
+        </ion-card>
+
+      </ion-col>   
+    </ion-row>
+  </ion-grid>
+    
+  </div>
+</ion-content>

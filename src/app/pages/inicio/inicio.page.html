@@ -1,39 +1,50 @@
+<!-- <app-header titulo="inicio"></app-header>-->
+
 <ion-header>
   <ion-toolbar>
     <ion-title>inicio</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <form >
-    <ion-list>          
-      <ion-item>
-        <ion-icon name="person" item-left></ion-icon>
-        <ion-label >Email:</ion-label>
-        <ion-input ></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-icon name="key" item-left></ion-icon>
-        <ion-label >Password:</ion-label>
-        <ion-input ></ion-input>
-      </ion-item>
-    </ion-list>
-    
-    <ion-row>
-      <div padding>
-        <ion-button routerLink="/datos" color="danger">Registrar</ion-button>
-      </div>
+<ion-content >
   
-      <div padding>
-        <ion-button routerLink="/productos" color="danger">Ingresar</ion-button>
-      </div>
-    </ion-row>
-  </form>
+      <form  class="centro" >
+       <ion-row>         <p></p>       </ion-row>
 
-  <div text-center>
-    <a>
-      Olvide mi contraseña
-    </a>
-  </div>
+       <ion-row>
+        <ion-list>          
+          <ion-item>
+            <ion-icon slot="start" name="person" item-left></ion-icon>
+            <ion-label >Email:</ion-label>
+            <ion-input ></ion-input>
+          </ion-item>
+    
+          <ion-item>
+            <ion-icon slot="start" name="key" item-left></ion-icon>
+            <ion-label >Password:</ion-label>
+            <ion-input ></ion-input>
+          </ion-item>
+          
+            <ion-button routerLink="/productos" color="danger" size="small">Ingresar</ion-button>
+          
+            <ion-button routerLink="/datos" color="danger" size="small">Nuevo</ion-button>
+          
+          
+        </ion-list>
+       </ion-row>
+
+       <ion-row>
+         <ion-col></ion-col>
+         <ion-col>          
+            
+         </ion-col>   
+          <ion-col>
+                      
+         </ion-col>
+         <ion-col></ion-col>
+       </ion-row>
+      </form>
+    
+      <!-- <div text-center>        <a>          Olvide mi contraseña        </a>      </div> -->
+   
 </ion-content>

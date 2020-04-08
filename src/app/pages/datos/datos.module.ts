@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { DatosPageRoutingModule } from './datos-routing.module';
 
 import { DatosPage } from './datos.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DatosPageRoutingModule
+    DatosPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [DatosPage]
 })

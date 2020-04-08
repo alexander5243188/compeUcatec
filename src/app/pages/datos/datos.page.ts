@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./datos.page.scss'],
 })
 export class DatosPage implements OnInit {
+   
+  public nombre;
+  public apellido;
+  public email;
+  public password;
 
-  constructor() { }
 
-  ngOnInit() {
+  constructor() {   }
+
+  ngOnInit() {   
   }
-
+  agregar_usuario(){      console.log(this.nombre+" "+this.apellido+" "+this.email+" "+this.password+" ");    }// ---- fin de funcion
 }

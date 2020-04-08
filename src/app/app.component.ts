@@ -32,10 +32,22 @@ export class AppComponent {
     this.navigate =
     [
       {
-        title : "Home",
-        url   : "/home",
-        icon  : "home"
+        title : "Compra",
+        url   : "/compra",
+        icon  : "cart"
       },
+      {
+        title : "Lista de Usuarios",
+        url   : "/lista-api",
+        icon  : "construct"
+      }/**,
+      {
+        title : "Bebidas",
+        url   : "/bebidas",
+        icon  : "beer"
+      }
+
+       ,
       {
         title : "compra",
         url   : "/compra",
@@ -45,7 +57,7 @@ export class AppComponent {
         title : "datos",
         url   : "/datos",
         icon  : "contacts"
-      },
+      },*/
     ]
   }
 }
