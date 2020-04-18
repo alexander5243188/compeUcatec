@@ -1,7 +1,0 @@
-{
-  "name": "compe",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
